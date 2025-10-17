@@ -1,61 +1,99 @@
-<<<<<<< HEAD
-# Sample Hardhat 3 Beta Project (`mocha` and `ethers`)
+# 🛡️ GuardianChain
 
-This project showcases a Hardhat 3 Beta project using `mocha` for tests and the `ethers` library for Ethereum interactions.
+### 🔗 A Blockchain-Powered Security Layer for Financial Trust
 
-To learn more about the Hardhat 3 Beta, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3 Beta](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+## 🚀 Overview
 
-## Project Overview
+**GuardianChain** is a decentralized financial security protocol designed to safeguard digital transactions, user data, and financial integrity. Built on **Ethereum** using **Solidity**, it aims to create a tamper-proof reputation system and fraud-resistant financial ecosystem.
 
-This example project includes:
+---
 
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using `mocha` and ethers.js
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
+## ⚠️ Problem Statement
 
-## Usage
+In India’s fast-growing fintech landscape:
 
-### Running Tests
+* 💸 **₹1500+ crore** is lost annually to scams and frauds.
+* 🧾 **No unified financial trust layer** exists across apps and banks.
+* 🤝 **Peer-to-peer lending lacks transparency and credibility.**
+* 🔐 **Data privacy and trust** are often compromised in centralized systems.
 
-To run all the tests in the project, execute the following command:
+---
 
-```shell
-npx hardhat test
+## 💡 Proposed Solution — *GuardianChain*
+
+GuardianChain creates a **blockchain-secured trust and reputation layer** for financial users:
+
+* ✅ **Reputation Smart Contracts**: Immutable trust scores based on transaction behavior.
+* 💳 **Decentralized Escrow System**: Prevents scams during fund transfers.
+* 🤖 **AI-powered Risk Detection (future integration)**: Flags suspicious or risky activity.
+* 🔗 **Transparent Ledger**: Every transaction is traceable, verifiable, and tamper-proof.
+
+GuardianChain acts as a **digital security firewall** for fintech and DeFi platforms — bridging **trust + transparency + technology**.
+
+---
+
+## 🧠 Core Architecture
+
+1. **Smart Contracts:** Solidity-based contracts for escrow, reputation, and user registry.
+2. **Backend:** Foundry for development, deployment, and testing.
+3. **Frontend:** React + Vite for user dashboard and interaction.
+4. **Blockchain:** Ethereum testnet (Goerli / Sepolia).
+
+---
+
+## 🧩 Tech Stack
+
+| Layer              | Technology                       |
+| ------------------ | -------------------------------- |
+| 💻 Smart Contracts | Solidity, Foundry                |
+| 🧠 Backend         | Hardhat, TypeScript              |
+| 🌐 Frontend        | React.js, Vite, Tailwind CSS     |
+| 🔗 Blockchain      | Ethereum (Sepolia Testnet)       |
+| 🧰 Tools           | MetaMask, Ethers.js, Git, VSCode |
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/KenidoesCode/GuardianChain.git
+
+# Navigate to the folder
+cd GuardianChain
+
+# Install dependencies
+npm install
+
+# Compile contracts
+forge build
+
+# Deploy contracts
+forge script script/Deploy.s.sol --rpc-url <YOUR_RPC_URL> --private-key <YOUR_PRIVATE_KEY> --broadcast
 ```
 
-You can also selectively run the Solidity or `mocha` tests:
+---
 
-```shell
-npx hardhat test solidity
-npx hardhat test mocha
-```
+## 🧭 Roadmap
 
-### Make a deployment to Sepolia
+* [x] Smart contract setup (Escrow + Reputation)
+* [x] Frontend integration with Foundry backend
+* [ ] AI-based fraud detection
+* [ ] Multichain support (Polygon, BSC)
+* [ ] Production deployment
 
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
+---
 
-To run the deployment to a local chain:
+## 🧱 Future Vision
 
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
+GuardianChain will evolve into a **national-level trust identity system** integrating:
 
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
+* Digital reputation for all users.
+* Verified lending and borrowing via blockchain.
+* Secure APIs for banks and fintech apps.
 
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
+---
 
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
+## 📜 License
 
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
-
-After setting the variable, you can run the deployment with the Sepolia network:
-
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
-=======
-# GuardianChain
->>>>>>> b0681ce62c5dc4b597cf9aa8d4218603141c5e50
+This project is licensed under the **MIT License**.
